@@ -1,211 +1,462 @@
 <!doctype html>
 <html lang="en">
 <head>
-<!-- Tallwater Revenue landing page: single file, no external requests, no cookies. Hosted on GitHub Pages. -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Tallwater Revenue | AI outbound for B2B agencies</title>
-<meta name="description" content="Qualified sales meetings for B2B agencies and boutique consultancies. AI-operated, human-approved outbound. Transparent pricing. Month-to-month after 90 days.">
-<meta property="og:title" content="Tallwater Revenue | AI outbound for B2B agencies">
-<meta property="og:description" content="AI-operated, human-approved outbound for B2B agencies and boutique consultancies. Get a free Pipeline Snapshot: 20 accounts that fit, with the trigger for each.">
+<title>Tallwater Revenue | AI lead follow-up for home services and verified B2B lead lists</title>
+<meta name="description" content="Founder-led lead-to-calendar operations for Tier-1 businesses. AI follow-up that books home-services enquiries, and verified, sourced B2B lists for agencies and recruiters. See the work before you pay.">
+<meta name="theme-color" content="#12110f">
+<link rel="canonical" href="https://pks080383-creator.github.io/tallwater-revenue/">
+<meta property="og:title" content="Tallwater Revenue | AI lead follow-up for home services and verified B2B lead lists">
+<meta property="og:description" content="Founder-led lead-to-calendar operations for Tier-1 businesses. AI follow-up that books home-services enquiries, and verified, sourced B2B lists for agencies and recruiters. See the work before you pay.">
 <meta property="og:type" content="website">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230b3d4f'/%3E%3Cpath d='M14 44 L32 16 L50 44' stroke='%237fd1c7' stroke-width='6' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<meta property="og:url" content="https://pks080383-creator.github.io/tallwater-revenue/">
+<link rel="preload" href="fonts/instrument-serif-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/instrument-sans-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2312110f'/%3E%3Cpath d='M14 44 L32 16 L50 44' stroke='%23e6d3b1' stroke-width='6' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
 <style>
-:root{--ink:#0f1f2a;--muted:#4d5f6b;--bg:#ffffff;--soft:#f3f7f8;--brand:#0b3d4f;--accent:#1f8f84;--accent2:#7fd1c7;--line:#dde6e9;--r:14px}
-*{box-sizing:border-box}html{scroll-behavior:smooth}
-body{margin:0;font:17px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg)}
-a{color:var(--accent)}img{max-width:100%}
-.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
-header.nav{position:sticky;top:0;background:rgba(255,255,255,.94);backdrop-filter:blur(6px);border-bottom:1px solid var(--line);z-index:10}
-header.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
-.logo{display:flex;align-items:center;gap:10px;font-weight:800;color:var(--brand);text-decoration:none;letter-spacing:-.01em}
-.logo svg{width:30px;height:30px}
-.nav a.link{color:var(--muted);text-decoration:none;margin-left:22px;font-size:15px}
-.nav .links{display:flex;align-items:center}
-@media(max-width:760px){.nav a.link{display:none}}
-.btn{display:inline-block;background:var(--accent);color:#fff;text-decoration:none;font-weight:700;padding:13px 22px;border-radius:10px;border:0;cursor:pointer;font-size:16px}
-.btn:hover{background:#177a70}.btn.ghost{background:transparent;color:var(--brand);border:2px solid var(--line)}
-.btn.small{padding:9px 16px;font-size:14px;margin-left:22px;white-space:nowrap}
-@media(max-width:420px){.logo{font-size:15px}.btn.small{margin-left:8px;padding:8px 12px}}
-.hero{background:linear-gradient(180deg,#eef7f6 0%,#fff 100%);padding:80px 0 60px}
-.hero h1{font-size:clamp(32px,5vw,52px);line-height:1.1;letter-spacing:-.02em;margin:0 0 18px;color:var(--brand);max-width:820px}
-.hero p.sub{font-size:clamp(17px,2.2vw,20px);color:var(--muted);max-width:720px;margin:0 0 28px}
-.cta-row{display:flex;flex-wrap:wrap;gap:14px;align-items:center}
-.trust{margin-top:30px;display:flex;flex-wrap:wrap;gap:8px 18px;color:var(--muted);font-size:14px}
-.trust span:before{content:"✓ ";color:var(--accent);font-weight:700}
-section{padding:64px 0;border-top:1px solid var(--line)}
-section.soft{background:var(--soft)}
-h2{font-size:clamp(26px,3.4vw,36px);line-height:1.2;letter-spacing:-.01em;color:var(--brand);margin:0 0 18px}
-.lead{color:var(--muted);max-width:760px}
-.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin:26px 0 10px}
-.stat{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:22px}
-.stat b{display:block;font-size:40px;color:var(--accent);line-height:1}
-.src{font-size:13px;color:var(--muted)}
-.steps{counter-reset:s;display:grid;grid-template-columns:repeat(5,1fr);gap:14px;margin-top:24px;padding:0;list-style:none}
-.steps li{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:20px;position:relative}
-.steps li:before{counter-increment:s;content:counter(s);display:inline-grid;place-items:center;width:32px;height:32px;border-radius:50%;background:var(--brand);color:#fff;font-weight:700;margin-bottom:10px}
-.steps b{display:block;margin-bottom:4px}
-.two{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:20px}
-.card{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:24px}
-.card h3{margin:0 0 10px;color:var(--brand)}
-.card ul{margin:0;padding-left:20px}
-.note{margin-top:18px;padding:14px 18px;border-left:4px solid var(--accent);background:#fff;border-radius:6px}
-.pricing{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:24px}
-.plan{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:24px;display:flex;flex-direction:column}
-.plan.pop{border:2px solid var(--accent);box-shadow:0 10px 30px rgba(31,143,132,.12)}
-.plan h3{margin:0;color:var(--brand)}
-.price{font-size:32px;font-weight:800;margin:8px 0 0}.price small{font-size:15px;font-weight:500;color:var(--muted)}
-.setup{color:var(--muted);font-size:14px;margin-bottom:14px}
-.plan ul{padding-left:18px;margin:0 0 18px;font-size:15px}.plan .btn{margin-top:auto;text-align:center}
-.tag{display:inline-block;background:var(--accent2);color:var(--brand);font-size:12px;font-weight:700;padding:3px 9px;border-radius:99px;margin-bottom:8px}
-.faq details{background:#fff;border:1px solid var(--line);border-radius:10px;padding:16px 20px;margin-bottom:10px}
-.faq summary{cursor:pointer;font-weight:700;color:var(--brand)}
-.faq p{margin:10px 0 0;color:var(--muted)}
-form{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:22px}
-form label{font-size:14px;font-weight:600;display:flex;flex-direction:column;gap:6px}
-form input,form select,form textarea{font:inherit;padding:12px;border:1px solid var(--line);border-radius:8px;background:#fff}
-form .full{grid-column:1/-1}
-.check{flex-direction:row!important;align-items:flex-start;gap:10px!important;font-weight:400!important;color:var(--muted)}
-.check input{margin-top:5px}
-.fine{font-size:13px;color:var(--muted)}
-footer{border-top:1px solid var(--line);padding:30px 0;color:var(--muted);font-size:14px}
-footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
-@media(max-width:960px){.steps{grid-template-columns:1fr 1fr}.pricing{grid-template-columns:1fr 1fr}}
-@media(max-width:640px){.stats,.two,.pricing,.steps,form{grid-template-columns:1fr}.hero{padding:56px 0 40px}section{padding:48px 0}}
+@font-face{font-family:"Instrument Serif";font-style:normal;font-weight:400;font-display:swap;src:url("fonts/instrument-serif-400.woff2") format("woff2")}
+@font-face{font-family:"Instrument Serif";font-style:italic;font-weight:400;font-display:swap;src:url("fonts/instrument-serif-400-italic.woff2") format("woff2")}
+@font-face{font-family:"Instrument Sans";font-style:normal;font-weight:400;font-display:swap;src:url("fonts/instrument-sans-400.woff2") format("woff2")}
+@font-face{font-family:"Instrument Sans";font-style:normal;font-weight:500;font-display:swap;src:url("fonts/instrument-sans-500.woff2") format("woff2")}
+@font-face{font-family:"Instrument Sans";font-style:normal;font-weight:600;font-display:swap;src:url("fonts/instrument-sans-600.woff2") format("woff2")}
+:root{
+  --bg:#12110f;
+  --bg-raise:#1c1a17;
+  --ink:#f4f0e7;
+  --muted:#c9c1b4;
+  --faint:#9c9488;
+  --line:rgba(244,240,231,.14);
+  --brass:#e6d3b1;
+  --brass-deep:#c4b08a;
+  --ink-btn:#1a1612;
+  --serif:"Instrument Serif",Georgia,"Times New Roman",serif;
+  --sans:"Instrument Sans","Segoe UI",system-ui,-apple-system,Helvetica,Arial,sans-serif;
+  --wrap:72rem;
+  --pad:clamp(1.25rem,4vw,2rem);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  font:400 1.0625rem/1.7 var(--sans);
+  color:var(--ink);
+  background:
+    radial-gradient(900px 480px at 100% -10%,rgba(230,211,177,.08),transparent 55%),
+    radial-gradient(700px 420px at -10% 8%,rgba(143,191,180,.06),transparent 50%),
+    var(--bg);
+  text-rendering:optimizeLegibility;
+}
+img{max-width:100%}
+a{color:var(--brass);text-decoration-thickness:1px;text-underline-offset:.18em}
+a:hover{color:#f3e6cc}
+:focus-visible{outline:2px solid var(--brass);outline-offset:3px}
+::selection{background:#e6d3b1;color:#1a1612}
+.skip{position:absolute;left:1rem;top:-4rem;background:var(--brass);color:var(--ink-btn);padding:.6rem 1rem;z-index:30;text-decoration:none}
+.skip:focus{top:1rem}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 var(--pad)}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+
+.site-header{
+  position:sticky;top:0;z-index:20;
+  background:rgba(18,17,15,.9);
+  backdrop-filter:blur(16px);
+  border-bottom:1px solid var(--line);
+}
+.header-bar{display:flex;align-items:center;justify-content:space-between;min-height:4.75rem;gap:1.5rem}
+.logo{display:flex;align-items:center;gap:.75rem;color:var(--ink);text-decoration:none;font-weight:500;letter-spacing:-.01em}
+.logo svg{width:1.85rem;height:1.85rem;flex:none}
+.desk-nav{display:flex;align-items:center;gap:1.35rem;margin-left:auto}
+.desk-nav a{color:var(--muted);text-decoration:none;font-size:.95rem;white-space:nowrap}
+.desk-nav a:hover{color:var(--ink)}
+.desk-nav a.btn{color:var(--ink-btn)}
+.desk-nav a.btn:hover{color:var(--ink-btn)}
+.mob-nav{display:none;margin-left:auto}
+.mob-nav summary{list-style:none;cursor:pointer}
+.mob-nav summary::-webkit-details-marker{display:none}
+.menu-bars{display:block;width:1.25rem;height:.7rem;border-top:1.5px solid var(--ink);border-bottom:1.5px solid var(--ink);position:relative}
+.menu-bars:before{content:"";position:absolute;left:0;right:0;top:50%;height:1.5px;background:var(--ink);transform:translateY(-50%)}
+
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;
+  min-height:3.1rem;padding:.75rem 1.3rem;
+  background:var(--brass);color:var(--ink-btn);
+  text-decoration:none;font-weight:500;font-size:.98rem;
+  border-radius:999px;border:1px solid var(--brass);
+  letter-spacing:.01em;
+}
+.btn:hover{background:#f0e2c8;border-color:#f0e2c8;color:var(--ink-btn)}
+.btn-ghost{background:transparent;color:var(--ink);border-color:rgba(244,240,231,.28)}
+.btn-ghost:hover{background:rgba(244,240,231,.06);color:var(--ink);border-color:rgba(244,240,231,.5)}
+.btn-small{min-height:2.5rem;padding:.45rem 1rem;font-size:.9rem}
+
+.hero{padding:clamp(4.5rem,10vw,8.5rem) 0 clamp(3.5rem,7vw,5.5rem)}
+.eyebrow{
+  margin:0 0 1.25rem;
+  font-size:.75rem;font-weight:500;letter-spacing:.16em;text-transform:uppercase;color:var(--brass-deep);
+}
+h1{
+  margin:0;
+  max-width:11em;
+  font-family:var(--serif);font-weight:400;
+  font-size:clamp(3rem,6.4vw,5.15rem);
+  line-height:.98;letter-spacing:-.03em;
+  text-wrap:balance;
+}
+.sub{
+  max-width:40rem;margin:1.75rem 0 0;
+  font-size:clamp(1.05rem,1.5vw,1.2rem);line-height:1.65;color:var(--muted);
+  text-wrap:pretty;
+}
+.cta-row{display:flex;flex-wrap:wrap;gap:.85rem;margin-top:2.25rem}
+.trust{
+  list-style:none;margin:3.5rem 0 0;padding:0;
+  display:grid;grid-template-columns:repeat(4,1fr);
+  border-top:1px solid var(--line);border-bottom:1px solid var(--line);
+}
+.trust li{
+  padding:1.15rem 1.1rem 1.15rem 0;
+  color:var(--muted);font-size:.95rem;line-height:1.4;
+}
+.trust li+li{padding-left:1.1rem;border-left:1px solid var(--line)}
+
+section{padding:clamp(4.25rem,8vw,7rem) 0}
+section[id],article[id],#snapshot{scroll-margin-top:5.5rem}
+.band{background:var(--bg-raise);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+h2{
+  margin:0;
+  font-family:var(--serif);font-weight:400;
+  font-size:clamp(2.15rem,4vw,3.35rem);
+  line-height:1.08;letter-spacing:-.025em;
+  text-wrap:balance;
+}
+.audience{margin:.9rem 0 0;font-family:var(--serif);font-style:italic;font-size:1.25rem;color:var(--muted);line-height:1.4}
+.offer-grid{
+  display:grid;
+  grid-template-columns:minmax(0,1.35fr) minmax(16rem,.72fr);
+  gap:2.75rem 4rem;
+  align-items:start;
+}
+.offer-copy p{margin:0 0 1.1rem;color:var(--muted);text-wrap:pretty}
+.offer-copy .eyebrow{color:var(--brass-deep);margin-bottom:1.15rem}
+.offer-copy .audience{margin:1rem 0 1.6rem}
+.offer-copy p.strong{color:var(--ink)}
+.points{list-style:none;margin:1.75rem 0 0;padding:0}
+.points li{
+  position:relative;
+  padding:.9rem 0 .9rem 1.35rem;
+  border-top:1px solid var(--line);
+  color:var(--ink);
+}
+.points li:last-child{border-bottom:1px solid var(--line)}
+.points li:before{
+  content:"";position:absolute;left:0;top:1.45rem;
+  width:.55rem;height:1px;background:var(--brass);
+}
+.offer-buy{border-top:1px solid var(--line);padding-top:1.5rem}
+@media(min-width:861px){
+  .offer-buy{
+    position:sticky;top:6.5rem;
+    border-top:0;border-left:1px solid var(--line);
+    padding:0 0 0 2rem;
+  }
+}
+.price{
+  margin:1.35rem 0 0;
+  font-family:var(--serif);
+  font-size:clamp(3.4rem,6vw,4.75rem);
+  line-height:.9;letter-spacing:-.03em;
+}
+.price small{font-family:var(--sans);font-size:1rem;letter-spacing:0;color:var(--muted);margin-left:.15rem}
+.setup{margin:.85rem 0 0;color:var(--muted)}
+.rate{margin:0;color:var(--brass-deep);font-size:.78rem;font-weight:500;letter-spacing:.14em;text-transform:uppercase}
+.offer-buy .btn{margin-top:1.6rem}
+.tiers{display:flex;flex-wrap:wrap;gap:1.25rem 1.75rem;margin:1.15rem 0 0}
+.tiers span{
+  font-family:var(--serif);font-size:clamp(2.6rem,4vw,3.4rem);line-height:1;letter-spacing:-.03em;
+}
+
+.steps{list-style:none;margin:2.75rem 0 0;padding:0}
+.steps li{
+  display:grid;grid-template-columns:4.5rem minmax(0,1fr);gap:1rem 1.5rem;
+  padding:1.7rem 0;border-top:1px solid var(--line);
+}
+.steps li:last-child{border-bottom:1px solid var(--line)}
+.steps .n{font-family:var(--serif);font-size:1.85rem;line-height:1.1;color:var(--brass)}
+.steps h3{margin:0 0 .35rem;font-size:1.2rem;font-weight:500;letter-spacing:-.01em}
+.steps p{margin:0;max-width:42rem;color:var(--muted);text-wrap:pretty}
+
+.founder{max-width:44rem}
+.founder p{margin:1.25rem 0 0;font-size:1.15rem;color:var(--muted);text-wrap:pretty}
+
+.faq h2{margin-bottom:1.75rem}
+.faq details{border-top:1px solid var(--line)}
+.faq details:last-of-type{border-bottom:1px solid var(--line)}
+.faq summary{
+  cursor:pointer;list-style:none;
+  display:flex;align-items:center;justify-content:space-between;gap:1.5rem;
+  padding:1.35rem 0;
+  font-size:1.15rem;font-weight:500;letter-spacing:-.01em;
+}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary:after{
+  content:"";flex:none;width:.9rem;height:.9rem;
+  background:
+    linear-gradient(var(--brass),var(--brass)) center/100% 1px no-repeat,
+    linear-gradient(var(--brass),var(--brass)) center/1px 100% no-repeat;
+}
+.faq details[open] summary:after{
+  background:linear-gradient(var(--brass),var(--brass)) center/100% 1px no-repeat;
+}
+.faq details p{margin:0 0 1.4rem;max-width:44rem;color:var(--muted);text-wrap:pretty}
+
+.close{text-align:left}
+.close .sub{margin-top:1.1rem}
+.close .paths{margin:1.35rem 0 0;color:var(--muted)}
+.close .paths p{margin:.25rem 0}
+
+footer{border-top:1px solid var(--line);padding:1.75rem 0 2.25rem;color:var(--faint);font-size:.92rem}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:.75rem 1.5rem}
+footer a{color:var(--muted)}
+.privacy{padding:clamp(3rem,6vw,4.5rem) 0 1rem}
+.privacy h2{
+  font-family:var(--sans);font-size:.75rem;font-weight:500;letter-spacing:.16em;text-transform:uppercase;color:var(--brass-deep);
+}
+.privacy p{max-width:44rem;color:var(--muted);margin:1rem 0 0}
+
+@media(max-width:860px){
+  .offer-grid{grid-template-columns:1fr;gap:2rem}
+  .trust{grid-template-columns:1fr 1fr}
+  .trust li:nth-child(odd){padding-left:0;border-left:0}
+  .trust li:nth-child(3),.trust li:nth-child(4){border-top:1px solid var(--line)}
+  .trust li:nth-child(even){border-left:1px solid var(--line)}
+}
+@media(max-width:980px){
+  .desk-nav{display:none}
+  .mob-nav{display:block}
+  .mob-nav summary{
+    display:inline-flex;align-items:center;justify-content:center;
+    width:2.75rem;height:2.75rem;border:1px solid var(--line);border-radius:999px;
+  }
+  .mob-nav nav{
+    position:absolute;left:0;right:0;top:100%;
+    flex-direction:column;align-items:stretch;gap:0;
+    padding:.4rem var(--pad) 1.1rem;
+    background:#1a1815;border-bottom:1px solid var(--line);
+  }
+  .mob-nav[open] nav{display:flex}
+  .mob-nav nav a{color:var(--ink);text-decoration:none;padding:.85rem 0;font-size:1.05rem}
+  .mob-nav nav a.btn{margin-top:.35rem;width:100%;color:var(--ink-btn)}
+}
+@media(max-width:640px){
+  .steps li{grid-template-columns:2.75rem minmax(0,1fr);gap:.75rem}
+  .cta-row .btn{width:100%}
+  .hero{padding-top:3.5rem}
+}
+@media(max-width:420px){
+  .trust{grid-template-columns:1fr}
+  .trust li,.trust li+li,.trust li:nth-child(even){border-left:0;padding-left:0}
+  .trust li+li{border-top:1px solid var(--line)}
+}
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+}
 </style>
 </head>
 <body>
-<header class="nav"><div class="wrap">
-  <a class="logo" href="#top" aria-label="Tallwater Revenue home"><svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#0b3d4f"/><path d="M14 44 L32 16 L50 44" stroke="#7fd1c7" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>Tallwater Revenue</a>
-  <nav class="links"><a class="link" href="#how">How it works</a><a class="link" href="#pricing">Pricing</a><a class="link" href="#faq">FAQ</a><a class="btn small" href="#snapshot">Free Snapshot</a></nav>
-</div></header>
+<a class="skip" href="#top">Skip to content</a>
+<header class="site-header">
+  <div class="wrap header-bar">
+    <a class="logo" href="#top" aria-label="Tallwater Revenue home">
+      <svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#e6d3b1"/><path d="M14 44 L32 16 L50 44" stroke="#1a1612" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      Tallwater Revenue
+    </a>
+    <nav class="desk-nav" aria-label="Primary">
+      <a href="#home-services">Home services</a>
+      <a href="#lead-lists">Lead lists</a>
+      <a href="#how">How we work</a>
+      <a href="#faq">FAQ</a>
+      <a class="btn btn-small" href="https://calendly.com/pankajsmartai" target="_blank" rel="noopener noreferrer">Book a walkthrough</a>
+    </nav>
+    <details class="mob-nav">
+      <summary aria-label="Open menu"><span class="menu-bars" aria-hidden="true"></span></summary>
+      <nav aria-label="Mobile">
+        <a href="#home-services">Home services</a>
+        <a href="#lead-lists">Lead lists</a>
+        <a href="#how">How we work</a>
+        <a href="#faq">FAQ</a>
+        <a class="btn btn-small" href="https://calendly.com/pankajsmartai" target="_blank" rel="noopener noreferrer">Book a walkthrough</a>
+      </nav>
+    </details>
+  </div>
+</header>
 
 <main id="top">
-<div class="hero"><div class="wrap">
-  <h1>More qualified sales meetings, without depending on referrals.</h1>
-  <p class="sub">Tallwater Revenue runs an AI-operated, human-approved outbound system for B2B agencies and boutique consultancies. We find companies showing a real reason to buy, write to them like a person would, and put qualified meetings on your calendar.</p>
-  <div class="cta-row"><a class="btn" href="#snapshot">Get my free Pipeline Snapshot</a><a class="btn ghost" href="#pricing">See pricing ↓</a></div>
-  <div class="trust"><span>Public pricing</span><span>You approve every email before it's sent</span><span>Month-to-month after 90 days</span><span>US · UK · Canada · Australia</span></div>
-</div></div>
+  <section class="hero">
+    <div class="wrap">
+      <p class="eyebrow">Lead-to-calendar operations</p>
+      <h1>Every lead answered, sourced, and on the calendar.</h1>
+      <p class="sub">Tallwater Revenue builds the stretch between a lead and a conversation. For US home-services companies, AI follow-up that replies within minutes and books the estimate. For agencies and recruiters, verified B2B lists with a source behind every row. Public prices. Written scope. You see the work before you pay.</p>
+      <div class="cta-row">
+        <a class="btn" href="https://calendly.com/pankajsmartai" target="_blank" rel="noopener noreferrer">Book a 15-minute walkthrough</a>
+        <a class="btn btn-ghost" href="mailto:pankajsmartai@gmail.com?subject=Free%2025-contact%20sample">Request a free 25-contact sample</a>
+      </div>
+      <ul class="trust">
+        <li>Public pricing</li>
+        <li>Free sample before you buy</li>
+        <li>Month to month</li>
+        <li>No revenue guarantees, by design</li>
+      </ul>
+    </div>
+  </section>
 
-<section><div class="wrap">
-  <h2>Referrals built your firm. They won't reliably grow it.</h2>
-  <div class="stats">
-    <div class="stat"><b>14%</b>of agencies describe their sales pipeline as healthy.</div>
-    <div class="stat"><b>70%</b>have no one working on sales full time, so the founder sells <em>and</em> delivers.</div>
-    <div class="stat"><b>9%</b>of agencies that tried outbound found it very effective.</div>
-  </div>
-  <p class="src">Source: SparkToro, State of Digital Agencies 2025.</p>
-  <p class="lead">When delivery gets busy, selling stops, and three months later there's a gap nobody planned for.</p>
-</div></section>
+  <section id="pricing" aria-label="Offers">
+      <article id="home-services">
+      <div class="wrap offer-grid">
+        <div class="offer-copy">
+          <p class="eyebrow">Home services</p>
+          <h2>AI lead follow-up and booking for HVAC, plumbing and roofing</h2>
+          <p class="audience">For US companies with 5 to 30 people.</p>
+          <p class="strong">A homeowner fills out your form at 7:40pm. You are on a job and the office has gone home. By the time someone replies, they have booked whoever wrote back first.</p>
+          <p>Tallwater captures the enquiry, asks the questions a good dispatcher would ask, sends a short follow-up in your voice within minutes, and gives qualified homeowners your booking link. Every enquiry is logged in HubSpot or a Google Sheet, and you get a one-page report every Monday.</p>
+          <ul class="points">
+            <li>Works with your current website and calendar</li>
+            <li>Emergencies still ring a person</li>
+            <li>No ads, no calls to your customers, no shared leads</li>
+          </ul>
+        </div>
+        <div class="offer-buy">
+          <p class="rate">Founding rate</p>
+          <p class="price">$499<small>/month</small></p>
+          <p class="setup">+ $199 setup. Month to month after 30 days.</p>
+          <p class="setup">No revenue guarantee.</p>
+          <a class="btn" href="https://calendly.com/pankajsmartai" target="_blank" rel="noopener noreferrer">See it in 15 minutes</a>
+        </div>
+      </div>
+    </article>
+  </section>
 
-<section class="soft"><div class="wrap">
-  <h2>One outcome: held, qualified meetings.</h2>
-  <p class="lead">Before we start, we agree in writing what "qualified" means: right company, right person, a real need, and a prospect who knows why they're on the call. Then we report against it every week.</p>
-</div></section>
+  <section class="band" id="lead-lists">
+    <div class="wrap offer-grid">
+      <div class="offer-copy">
+        <p class="eyebrow">Agencies and recruiters</p>
+        <h2>Verified Tier-1 B2B lead lists</h2>
+        <p class="audience">For agencies and recruiters selling into the US, UK, Canada, Australia, the EU and Singapore.</p>
+        <p class="strong">Contacts matched to your ICP: decision-maker name, title, LinkedIn profile and verified business email. Every row carries the source it came from and an email verification status. Anything we cannot confirm is marked "not verified," never guessed.</p>
+        <ul class="points">
+          <li>Built to your ICP, not pulled from a generic database</li>
+          <li>Source link on every row</li>
+          <li>Delivered as a clean CSV, ready for your CRM or sending tool</li>
+        </ul>
+      </div>
+      <div class="offer-buy" id="snapshot">
+        <p class="rate">Fixed packages</p>
+        <div class="tiers"><span>$25</span><span>$45</span><span>$85</span></div>
+        <p class="setup">Start with a free 25-contact sample. Fixed packages at $25, $45 and $85 on Fiverr.</p>
+        <a class="btn" href="mailto:pankajsmartai@gmail.com?subject=Free%2025-contact%20sample">Request your free sample</a>
+      </div>
+    </div>
+  </section>
 
-<section id="how"><div class="wrap">
-  <h2>How it works</h2>
-  <ol class="steps">
-    <li><b>Kickoff</b>We map why your best clients bought and turn that into targeting rules.</li>
-    <li><b>Safe setup</b>Separate sending domains (never your main one), authenticated and warmed for 2–4 weeks.</li>
-    <li><b>Research</b>AI builds a verified list of accounts with a current buying trigger: a new leader, hiring, a launch.</li>
-    <li><b>Outreach you approve</b>Short, plain-text emails built on each prospect's trigger. Nothing goes out until you approve the copy.</li>
-    <li><b>Replies → meetings</b>A person reviews every reply before anyone answers. Interested prospects book straight into your calendar, and you get a one-page brief.</li>
-  </ol>
-</div></section>
+  <section id="how">
+    <div class="wrap">
+      <h2>How we work</h2>
+      <ol class="steps">
+        <li>
+          <span class="n">01</span>
+          <div>
+            <h3>Scope in writing.</h3>
+            <p>You tell us who you want to reach, or how your enquiries arrive today. We confirm the scope, price and exclusions in writing before anything starts.</p>
+          </div>
+        </li>
+        <li>
+          <span class="n">02</span>
+          <div>
+            <h3>See it first.</h3>
+            <p>List buyers get a free 25-contact sample. Home-services owners see one enquiry run end to end on a 15-minute call.</p>
+          </div>
+        </li>
+        <li>
+          <span class="n">03</span>
+          <div>
+            <h3>Build.</h3>
+            <p>We build the list or connect the system: form, Calendly, and HubSpot or Sheets. You approve the messages that go out in your name.</p>
+          </div>
+        </li>
+        <li>
+          <span class="n">04</span>
+          <div>
+            <h3>Check.</h3>
+            <p>Every list row is sourced and verified. Every follow-up system is tested with a fake enquiry before it goes live.</p>
+          </div>
+        </li>
+        <li>
+          <span class="n">05</span>
+          <div>
+            <h3>Report.</h3>
+            <p>Lists arrive with a short data note. Follow-up clients get the Monday report: enquiries in, qualified, booked, and still open.</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
 
-<section class="soft"><div class="wrap">
-  <h2>What's automated, and what isn't</h2>
-  <div class="two">
-    <div class="card"><h3>AI does</h3><ul><li>Account research, verification, trigger detection</li><li>First drafts of every email</li><li>Scheduling, rotation, out-of-office and bounce handling</li><li>CRM logging and weekly reports</li></ul></div>
-    <div class="card"><h3>A human does</h3><ul><li>Defines your ICP and offer with you</li><li>Approves copy (you do too)</li><li>Reviews and approves replies to interested prospects</li><li>Monthly strategy review and optimization</li></ul></div>
-  </div>
-  <p class="note"><b>We don't</b> scrape LinkedIn, run bots on your profile, use purchased "guaranteed" lists, or send from your main domain.</p>
-</div></section>
+  <section class="band" id="about">
+    <div class="wrap founder">
+      <h2>Who is behind Tallwater</h2>
+      <p>Tallwater Revenue is founder-led by Pankaj, based in India and working only with buyers in the US, UK, Canada, Australia, the EU and Singapore. Tallwater is new, so there are no case studies yet, and we will not publish any we have not produced. That is why every engagement starts with something you can inspect: a sample, a live walkthrough, a public price.</p>
+    </div>
+  </section>
 
-<section><div class="wrap">
-  <h2>What you'll see every week</h2>
-  <p class="lead">Contacts reached · reply rate · positive replies · meetings booked · show rate · held qualified meetings · pipeline logged · deliverability health. The bad weeks too.</p>
-</div></section>
+  <section id="faq" class="faq">
+    <div class="wrap">
+      <h2>FAQ</h2>
+      <details>
+        <summary>You have no case studies. Why should I trust you?</summary>
+        <p>Because you do not have to take our word for anything. List buyers judge a free 25-contact sample before paying. Home-services owners watch the system handle an enquiry before signing up. Prices and exclusions are on this page.</p>
+      </details>
+      <details>
+        <summary>What does "verified" mean on a lead list?</summary>
+        <p>Each email is checked with a verification tool and labelled with its result. Each row links to the public source for the contact. Where we cannot confirm a field, we say so in the file instead of filling the gap with a guess. You are responsible for lawful use of the data in your market, including GDPR and PECR for EU and UK contacts.</p>
+      </details>
+      <details>
+        <summary>Will the home-services follow-up sound like a robot?</summary>
+        <p>No. Messages are short, plain, and written in your company's voice during setup, and you approve them before launch. One follow-up, one reminder if they do not book. No five-email drips on a burst pipe.</p>
+      </details>
+      <details>
+        <summary>Do you guarantee more jobs or revenue?</summary>
+        <p>No. We install and run the system, and we show you every enquiry and what happened to it. If your enquiries are not going cold, you do not need us. If they are, the Monday report will show it, and you can cancel month to month after the first 30 days.</p>
+      </details>
+    </div>
+  </section>
 
-<section id="pricing" class="soft"><div class="wrap">
-  <h2>Transparent pricing. Month-to-month after 90 days.</h2>
-  <div class="pricing">
-    <div class="plan"><h3>Starter</h3><p class="price">$749<small>/mo</small></p><p class="setup">+ $750 one-time setup</p><ul><li>1 ICP segment</li><li>~1,000 new verified contacts/mo</li><li>Email outreach, human-reviewed replies</li><li>Monthly review</li></ul><a class="btn ghost" href="#snapshot">Start with a Snapshot</a></div>
-    <div class="plan pop"><span class="tag">Recommended</span><h3>Growth</h3><p class="price">$1,490<small>/mo</small></p><p class="setup">+ $1,000 one-time setup</p><ul><li>2 ICP segments</li><li>~2,000 new verified contacts/mo</li><li>Trigger targeting, LinkedIn drafts, CRM sync</li><li>Bi-weekly review</li></ul><a class="btn" href="#snapshot">Start with a Snapshot</a></div>
-    <div class="plan"><h3>Premium</h3><p class="price">$2,490<small>/mo</small></p><p class="setup">+ $1,500 one-time setup</p><ul><li>3 ICP segments</li><li>~3,200 new verified contacts/mo</li><li>Past-client reactivation, speed-to-lead on inbound forms</li><li>Weekly review + Slack</li></ul><a class="btn ghost" href="#snapshot">Start with a Snapshot</a></div>
-    <div class="plan"><h3>Enterprise / white-label</h3><p class="price">from $5,000<small>/mo</small></p><p class="setup">Custom scope</p><ul><li>Multi-brand / multi-rep</li><li>Custom volumes</li><li>Resell to your clients</li><li>Custom reporting</li></ul><a class="btn ghost" href="mailto:pankajsmartai@gmail.com?subject=Pipeline%20Snapshot">Email us</a></div>
-  </div>
-  <p class="note"><b>Founding clients:</b> the first 3 clients get a reduced rate for 3 months in exchange for a case study, if the results merit one. <a href="#snapshot">Ask about availability</a>.</p>
-</div></section>
+  <section class="band close" id="book">
+    <div class="wrap">
+      <h2>See the work before you spend anything.</h2>
+      <div class="paths">
+        <p>Home-services owner? Watch one enquiry go from form to calendar in 15 minutes.</p>
+        <p>Agency or recruiter? Get 25 contacts built to your ICP, free.</p>
+      </div>
+      <div class="cta-row">
+        <a class="btn" href="https://calendly.com/pankajsmartai" target="_blank" rel="noopener noreferrer">Book a 15-minute walkthrough</a>
+        <a class="btn btn-ghost" href="mailto:pankajsmartai@gmail.com?subject=Free%2025-contact%20sample">Request a free 25-contact sample</a>
+      </div>
+    </div>
+  </section>
 
-<section><div class="wrap">
-  <h2>A guarantee with the conditions written down.</h2>
-  <div class="two">
-    <div class="card"><h3>Live within 21 days</h3><p>From kickoff, as long as you approve copy within 3 business days. Otherwise we credit a week's fee for each week of delay.</p></div>
-    <div class="card"><h3>Volume delivered</h3><p>Your plan's contact volume from month 2, or we credit the shortfall.</p></div>
-    <div class="card"><h3>Performance credit</h3><p>In months 2–4, if held qualified meetings fall below your plan's floor (2 / 4 / 6), next month is half price, provided you took the meetings and kept the agreed targeting.</p></div>
-    <div class="card"><h3>What we don't promise</h3><p>We don't promise revenue or a fixed number of meetings. Nobody honestly can.</p></div>
-  </div>
-</div></section>
-
-<section class="soft"><div class="wrap">
-  <h2>Built to protect your reputation.</h2>
-  <p class="lead">Separate authenticated domains (SPF, DKIM, DMARC) · capped daily volumes · automatic pause on bounce or complaint spikes · opt-outs honoured within one business day · CAN-SPAM (US), PECR/UK GDPR (UK), CASL (Canada) and Spam Act (Australia) rules applied per country · no DACH outreach.</p>
-</div></section>
-
-<section><div class="wrap">
-  <h2>Who's behind Tallwater Revenue</h2>
-  <p class="lead">Tallwater Revenue is a founder-led service run by Pankaj, based in India and serving B2B agencies and boutique consultancies in the US, UK, Canada and Australia. We are onboarding our first founding clients now, so there are no client results to show yet, and we won't publish any we haven't produced.</p>
-</div></section>
-
-<section id="faq" class="soft faq"><div class="wrap">
-  <h2>FAQ</h2>
-  <details><summary>Will this sound like AI?</summary><p>Emails are under 80 words, built on a real trigger, and approved by you. If a line sounds generic, it doesn't go out.</p></details>
-  <details><summary>Is cold email legal?</summary><p>Yes, when it's done properly: country-specific rules, a real postal address, a working opt-out, and no harvested lists. We exclude countries where B2B cold email needs prior consent (e.g. Germany).</p></details>
-  <details><summary>What if it doesn't work for us?</summary><p>You'll see it in the weekly numbers. The performance credit applies in months 2–4, and after 90 days you can stop with 30 days' notice.</p></details>
-  <details><summary>Who owns the domains and data?</summary><p>You do. Domains are registered for your benefit and transfer to you if you leave.</p></details>
-  <details><summary>Do you do LinkedIn automation or calls?</summary><p>No automation. On Growth and above we draft LinkedIn messages for you to send yourself. No cold calling.</p></details>
-  <details><summary>Do you have case studies?</summary><p>Not yet for this service. We're onboarding founding clients now and won't show results we haven't produced.</p></details>
-  <details><summary>What CRMs do you support?</summary><p>HubSpot and Pipedrive natively. Others by weekly export.</p></details>
-</div></section>
-
-<section id="snapshot"><div class="wrap">
-  <h2>See your first 20 accounts before you spend anything.</h2>
-  <p class="lead">Tell us about your best clients. Within one business day we'll send 20 accounts that fit, the trigger we'd use for each, and 3 sample opening lines. No call required.</p>
-  <form id="snapform" novalidate>
-    <label>First name<input name="first" required autocomplete="given-name"></label>
-    <label>Work email<input name="email" type="email" required autocomplete="email"></label>
-    <label>Company website<input name="site" type="url" placeholder="https://" required></label>
-    <label>Country<select name="country"><option>US</option><option>UK</option><option>Canada</option><option>Australia</option><option>Other</option></select></label>
-    <label class="full">Describe your best client in one sentence<textarea name="best" rows="3" required></textarea></label>
-    <label class="full check"><input type="checkbox" name="optin"> Send me occasional emails about outbound for agencies. Unsubscribe anytime. (Optional. You'll get the Snapshot either way.)</label>
-    <div class="full"><button class="btn" type="submit">Send my Pipeline Snapshot</button>
-    <p class="fine">This opens your email app with your answers filled in, so nothing is stored on this site. We'll only use your details to send your Snapshot and follow up about it. See <a href="#privacy">privacy</a>.</p>
-    <p>Prefer to talk? <a href="mailto:pankajsmartai@gmail.com?subject=Pipeline%20Snapshot"><b>Email Pankaj →</b></a></p></div>
-  </form>
-</div></section>
-
-<section id="privacy" class="soft"><div class="wrap">
-  <h2>Privacy</h2>
-  <p class="lead">This site uses no cookies, analytics or trackers. If you email us or book a call, we use your name, email and company details only to respond, prepare your Snapshot and follow up about it. We never sell or share them. Ask us to delete your data anytime at <a href="mailto:pankajsmartai@gmail.com">pankajsmartai@gmail.com</a>.</p>
-</div></section>
+  <section id="privacy" class="privacy">
+    <div class="wrap">
+      <h2>Privacy</h2>
+      <p>This site uses no cookies, analytics or trackers. If you email us or book a call, we use your name, email and company details only to reply and to follow up about that enquiry. We do not sell or share them. Ask us to delete your data anytime at <a href="mailto:pankajsmartai@gmail.com">pankajsmartai@gmail.com</a>.</p>
+    </div>
+  </section>
 </main>
 
-<footer><div class="wrap">
-  <span>© <span id="yr">2026</span> Tallwater Revenue · Serving US · UK · Canada · Australia</span>
-  <span><a href="#privacy">Privacy</a> · <a href="mailto:pankajsmartai@gmail.com">Contact</a> · <a href="mailto:pankajsmartai@gmail.com?subject=Pipeline%20Snapshot">Request a Snapshot</a></span>
-</div></footer>
-
-<script>
-document.getElementById('yr').textContent=new Date().getFullYear();
-document.getElementById('snapform').addEventListener('submit',function(e){
-  e.preventDefault();var f=e.target;
-  if(!f.checkValidity()){f.reportValidity();return;}
-  var body=['Pipeline Snapshot request','','First name: '+f.first.value,'Work email: '+f.email.value,'Company website: '+f.site.value,'Country: '+f.country.value,'Best client: '+f.best.value,'Marketing emails OK: '+(f.optin.checked?'Yes':'No')].join('\n');
-  window.location.href='mailto:pankajsmartai@gmail.com?subject='+encodeURIComponent('Pipeline Snapshot request: '+f.site.value)+'&body='+encodeURIComponent(body);
-});
-</script>
+<footer>
+  <div class="wrap">
+    <span>Tallwater Revenue · Founder-led from India · Serving US, UK, CA, AU, EU and SG</span>
+    <span><a href="#privacy">Privacy</a> · <a href="mailto:pankajsmartai@gmail.com">pankajsmartai@gmail.com</a></span>
+  </div>
+</footer>
 </body>
 </html>
